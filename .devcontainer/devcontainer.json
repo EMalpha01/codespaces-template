@@ -20,7 +20,8 @@
         "kiteco.kite",
         "littlefoxteam.vscode-python-test-adapter",
         "alessandro1985.pandas-notebook",
-        "ms-python.pylint"  // Added Pylint extension
+        "donjayamanne.githistory",
+        "ms-python.pylint"
       ],
       "settings": {
         "python.condaPath": "",  // Disable conda environment discovery
