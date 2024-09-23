@@ -1,33 +1,37 @@
 {
-    "name": "Python NLP Dev Container",
-    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.12.1",  // You can update this to match your Python version
-    "extensions": [
-      "ms-python.python",
-      "ms-python.vscode-pylance",
-      "ms-toolsai.jupyter",
-      "pytorchsnippets.pytorch-snippets",
-      "nathanepstein.vscode-torch-lens",
-      "ms-python.tensorboard-preview",
-      "esbenp.prettier-vscode",
-      "joslarson.black-formatter",
-      "njpwerner.autodocstring",
-      "github.copilot",
-      "tabnine.tabnine-vscode",
-      "ms-vsliveshare.vsliveshare",
-      "dbaeumer.vscode-eslint",
-      "github.vscode-pull-request-github",
-      "kiteco.kite",
-      "silvenon.mdx",
-      "littlefoxteam.vscode-python-test-adapter",
-      "alessandro1985.pandas-notebook"
-    ],
-    "settings": {
-      "python.pythonPath": "/usr/local/bin/python3",
-      "editor.formatOnSave": true,
-      "python.linting.enabled": true,
-      "python.linting.pylintEnabled": true
-    },
-    "postCreateCommand": "pip install -r requirements.txt",  // Add this if your project has a requirements file
-    "remoteUser": "vscode"
-  }
-  
+  "name": "Python NLP Dev Container",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.12.1",  // You can update this to match your Python version
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "pytorchsnippets.pytorch-snippets",
+        "nathanepstein.vscode-torch-lens",
+        "ms-python.tensorboard-preview",
+        "esbenp.prettier-vscode",
+        "joslarson.black-formatter",
+        "njpwerner.autodocstring",
+        "github.copilot",
+        "tabnine.tabnine-vscode",
+        "ms-vsliveshare.vsliveshare",
+        "dbaeumer.vscode-eslint",
+        "github.vscode-pull-request-github",
+        "kiteco.kite",
+        "silvenon.mdx",
+        "littlefoxteam.vscode-python-test-adapter",
+        "alessandro1985.pandas-notebook"
+      ],
+      "settings": {
+        "python.pythonPath": "/usr/local/bin/python3",
+        "editor.formatOnSave": true,
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true
+      }
+    }
+  },
+
+  "postCreateCommand": "pip install -r requirements.txt",  // Add this if your project has a requirements file
+  "remoteUser": "vscode"
+}
