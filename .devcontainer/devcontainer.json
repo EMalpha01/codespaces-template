@@ -1,6 +1,6 @@
 {
   "name": "Python NLP Dev Container",
-  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.12.1",  // You can update this to match your Python version
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",  // You can update this to match your Python version
   "customizations": {
     "vscode": {
       "extensions": [
@@ -14,24 +14,23 @@
         "joslarson.black-formatter",
         "njpwerner.autodocstring",
         "github.copilot",
-        "tabnine.tabnine-vscode",
         "ms-vsliveshare.vsliveshare",
         "dbaeumer.vscode-eslint",
         "github.vscode-pull-request-github",
         "kiteco.kite",
         "silvenon.mdx",
         "littlefoxteam.vscode-python-test-adapter",
-        "alessandro1985.pandas-notebook"
+        "alessandro1985.pandas-notebook",
+        "ms-python.pylint"  // Added Pylint extension
       ],
       "settings": {
+        "python.condaPath": "",  // Disable conda environment discovery
         "python.pythonPath": "/usr/local/bin/python3",
         "editor.formatOnSave": true,
-        "python.linting.enabled": true,
-        "python.linting.pylintEnabled": true
+        "python.formatting.provider": "black"  // Set Black as the default formatter
       }
     }
   },
-
   "postCreateCommand": "pip install -r requirements.txt",  // Add this if your project has a requirements file
   "remoteUser": "vscode"
 }
