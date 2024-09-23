@@ -27,7 +27,9 @@
         "python.condaPath": "",  // Disable conda environment discovery
         "python.pythonPath": "/usr/local/bin/python3",
         "editor.formatOnSave": true,
-        "python.formatting.provider": "black"  // Set Black as the default formatter
+        "python.formatting.provider": "black",  // Set Black as the default formatter
+        "editor.minimap.enabled": false,  // Disable the minimap
+        "workbench.sideBar.location": "right"  // Move the Explorer pane to the right
       }
     }
   },
